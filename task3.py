@@ -7,13 +7,13 @@ import shutil
 def move_jpg_files(source_folder, destination_folder):
     # Check if source folder exists
     if not os.path.exists(source_folder):
-        print("❌ Source folder does not exist.")
+        print(" Source folder does not exist.")
         return
     
     # Create destination folder if it doesn't exist
     if not os.path.exists(destination_folder):
         os.makedirs(destination_folder)
-        print(f"📁 Created destination folder: {destination_folder}")
+        print(f"Created destination folder: {destination_folder}")
     
     moved_count = 0
     
@@ -25,12 +25,13 @@ def move_jpg_files(source_folder, destination_folder):
             
             shutil.move(source_path, destination_path)
             moved_count += 1
-            print(f"✅ Moved: {filename}")
+            print(f" Moved: {filename}")
     
-    print(f"\n📦 Total .jpg files moved: {moved_count}")
+    print(f"\n Total .jpg files moved: {moved_count}")
 
 if __name__ == "__main__":
-    print("📂 JPG File Mover Automation Script")
+    print(" JPG File Mover Automation Script")
     src = input("Enter source folder path: ").strip()
     dest = input("Enter destination folder path: ").strip()
     move_jpg_files(src, dest)
+
