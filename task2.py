@@ -55,7 +55,8 @@ if save_choice == "yes":
             investment = qty * stock_prices[stock]
             file.write(f"{stock} - {qty} shares × ${stock_prices[stock]} = ${investment}\n")
         file.write(f"\n Total Investment Value: ${total_investment}\n")
-    print(f"✅ Summary saved to {file_name}")
+    print(f"Summary saved to {file_name}")
 
-print("\n✅ Thank you for using Stock Portfolio Tracker!")
+print(" Thank you for using Stock Portfolio Tracker!")
+
 
